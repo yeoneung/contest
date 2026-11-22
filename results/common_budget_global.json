@@ -1,0 +1,61 @@
+{
+  "parameters": {
+    "P": 0.2,
+    "cap": 1.0,
+    "etaR": 1.0,
+    "etaI": 0.05,
+    "etaE": 4.0,
+    "q": 0.5
+  },
+  "grid_points": 1001,
+  "rho0": 0.3684197416423756,
+  "S0": 0.6315802583576244,
+  "bmax_numeric": 0.15851112951093685,
+  "rho_at_bmax": 9.289658348035387e-09,
+  "Smax_numeric": 0.6829777346334964,
+  "expected_time_at_S0": 0.7883035280466156,
+  "expected_time_at_Smax": 0.7289797612144443,
+  "welfare_table": [
+    {
+      "K2": 1.0,
+      "delta": 0.1,
+      "social_stake": 0.35413705591570366,
+      "attribution_stake": 0.35413705591570366,
+      "budget_design_stake": 0.35413705591570366,
+      "welfare_attribution": 1.7845099353696061,
+      "welfare_budget_design": 1.7845099353696061,
+      "marginal_at_S0": -0.19540756831044367
+    },
+    {
+      "K2": 2.0,
+      "delta": 0.1,
+      "social_stake": 0.5207490576066287,
+      "attribution_stake": 0.5207490576066287,
+      "budget_design_stake": 0.5207490576066287,
+      "welfare_attribution": 2.683494362823973,
+      "welfare_budget_design": 2.683494362823973,
+      "marginal_at_S0": -0.08990961637459399
+    },
+    {
+      "K2": 4.0,
+      "delta": 0.1,
+      "social_stake": 0.7573170999226617,
+      "attribution_stake": 0.6315802583576244,
+      "budget_design_stake": 0.6829777346334964,
+      "welfare_attribution": 4.533180316611654,
+      "welfare_budget_design": 4.537886011595441,
+      "marginal_at_S0": 0.12108628749710532
+    },
+    {
+      "K2": 8.0,
+      "delta": 0.1,
+      "social_stake": 1.09256110256994,
+      "attribution_stake": 0.6315802583576244,
+      "budget_design_stake": 0.6829777346334964,
+      "welfare_attribution": 8.243393347273198,
+      "welfare_budget_design": 8.26827705751965,
+      "marginal_at_S0": 0.5430780952405039
+    }
+  ],
+  "note": "Numerical scan/refinement is not a certificate of the global maximum; threshold designs require equilibrium selection or an arbitrarily small strict-release margin."
+}

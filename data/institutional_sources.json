@@ -1,0 +1,110 @@
+{
+  "accessed": "2026-11-21",
+  "record_type": "Manually transcribed public award schedules, not contestant outcomes",
+  "sources": [
+    {
+      "id": "stanford-rna-3d-folding",
+      "organizer": "Stanford University",
+      "title": "Stanford RNA 3D Folding",
+      "year": 2025,
+      "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/overview",
+      "facts": {
+        "announced_prize_budget_usd": 75000,
+        "ranked_prizes_usd": [
+          45000,
+          15000,
+          10000
+        ],
+        "early_sharing_award_usd": 2500,
+        "maximum_early_sharing_awards": 2,
+        "early_sharing_conditions": "The first two qualifying public notebooks must exceed the stated benchmark after the leaderboard refresh and remain public with their datasets until the final submission deadline. Licensing, reproducibility, and documentation requirements apply."
+      },
+      "rules_url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/rules",
+      "direct_browser_review": {
+        "overview": {
+          "id": "stanford_2025_overview",
+          "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/overview",
+          "timestamp": "2026-11-21T07:16:36.597789+00:00",
+          "html_bytes": 103514,
+          "text_characters": 9691,
+          "sha256": "f4dd0ca94ba0d6e81856be08af44ed9bd43da4d25edf1d74ae4c393ae763a667"
+        },
+        "rules": {
+          "id": "stanford_2025_rules",
+          "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/rules",
+          "timestamp": "2026-11-21T07:15:35.080892+00:00",
+          "html_bytes": 72980,
+          "text_characters": 35209,
+          "sha256": "7f68235134c208d6f985d3fd487334ce914deec6456939a623d371e7df8b10ac"
+        }
+      },
+      "recommended_authors": [
+        "Shujun He",
+        "CASP16 organizers",
+        "CASP16 RNA experimentalists",
+        "RNA-Puzzles consortium",
+        "VFOLD team",
+        "Rachael Kretsch",
+        "Alissa Hummer",
+        "Andrew Favor",
+        "Walter Reade",
+        "Maggie Demkin",
+        "Rhiju Das",
+        "et al."
+      ]
+    },
+    {
+      "id": "stanford-rna-3d-folding-2",
+      "organizer": "Stanford University",
+      "title": "Stanford RNA 3D Folding Part 2",
+      "year": 2026,
+      "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding-2/",
+      "facts": {
+        "announced_prize_budget_usd": 75000,
+        "ranked_prizes_usd": [
+          50000,
+          15000,
+          10000
+        ],
+        "separate_early_sharing_awards_listed": false
+      },
+      "rules_url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding-2/rules",
+      "direct_browser_review": {
+        "overview": {
+          "id": "stanford_2026_overview",
+          "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding-2/overview",
+          "timestamp": "2026-11-21T07:15:34.864829+00:00",
+          "html_bytes": 100710,
+          "text_characters": 7423,
+          "sha256": "999c3c1503bf147a08a401ebf1b5324ea695dbf86a60ff148a8d777973198223"
+        },
+        "rules": {
+          "id": "stanford_2026_rules",
+          "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding-2/rules",
+          "timestamp": "2026-11-21T07:16:36.157944+00:00",
+          "html_bytes": 73137,
+          "text_characters": 35157,
+          "sha256": "359dc7c71f2be5c62a242a6b58bb7ff80933d52ab4d462fae3b3ca5b578da78d"
+        }
+      },
+      "recommended_authors": [
+        "Rhiju Das",
+        "Youhan Lee",
+        "Chris Munley",
+        "Przemek Porebski",
+        "Walter Reade",
+        "Theo Viel",
+        "Ashley Oldacre"
+      ]
+    }
+  ],
+  "interpretation": {
+    "zero_sharing_entry": "Zero means no separate early-sharing award is listed in the retrieved 2026 prize schedule; it is not a record of actual payments.",
+    "budget_definition": "The announced prize budget, not all costs of organizing the competition.",
+    "comparison": "The schedules document different award allocations at the same announced budget. They do not identify the reason for the change or its effect on discovery speed.",
+    "unused_awards": "No explicit transfer of an unearned early-sharing award into leaderboard prizes was identified in the reviewed Rules. The model treats such a transfer as a design alternative. Forfeiture and replacement are addressed separately in Section 3.9(d).",
+    "timing": "Section 3.9(d) states approximately 30 days after receipt of required acceptance documents. Early qualification is distinct from cash disbursement.",
+    "model_mapping": "The application protects $15,000 for each of two hypothetical finalists and the $10,000 third-place payment, leaving $35,000 for their winning-stake increment and up to two $2,500 sharing payments. This is a two-finalist planning benchmark using actual monetary constraints; it does not structurally calibrate the entire multiwinner competition. The 2025 full ranked-prize pool of $70,000 is not a single winning stake."
+  },
+  "retrieval": "Directly reviewed both editions' Overview and Rules in isolated Chrome browser sessions with JavaScript rendered on November 21, 2026. Source URLs, timestamps, and rendered HTML hashes are recorded. Earlier search-index checks were preliminary."
+}

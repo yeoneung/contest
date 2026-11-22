@@ -1,0 +1,31 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\begin{document}
+\begin{tikzpicture}
+\pgfplotstableread{data/welfare.csv}\tab
+\begin{groupplot}[group style={group size=2 by 1, horizontal sep=1.9cm}, paper]
+\nextgroupplot[title={(a) Welfare under redistributive attribution},
+  xlabel={Attribution share $\rho$}, ylabel={Welfare, \% of attribution optimum},
+  xmin=0, xmax=1, ymin=45, ymax=103, xtick={0,0.2,...,1},
+  legend style={at={(0.03,0.03)}, anchor=south west}]
+  \fill[relfill] (axis cs:0.3684,45) rectangle (axis cs:1,103);
+  \addplot[o2, densely dashed] table[x=rho, y expr=100*\thisrow{W1}/1.7845] {data/welfare.csv};
+  \addplot[o3, dash dot] table[x=rho, y expr=100*\thisrow{W2}/2.6835] {data/welfare.csv};
+  \addplot[o4] table[x=rho, y expr=100*\thisrow{W4}/4.5332] {data/welfare.csv};
+  \addplot[only marks, mark=*, mark size=1.8pt, mark options={fill=white, draw=ink, line width=0.7pt}]
+     coordinates {(0.6459,100) (0.4793,100) (0.3684,100)};
+  \draw[vline] (axis cs:0.3684,45) -- (axis cs:0.3684,103);
+  \node[lab, text=ink2, anchor=north west, fill=relfill] at (axis cs:0.375,52) {$\rho_D=0.3684$};
+  \legend{$K_2=1$, $K_2=2$, $K_2=4$}
+\nextgroupplot[title={(b) When funding release pays},
+  xlabel={Social value of the extension $K_2$},
+  ylabel={Funding threshold $\varphi_m$},
+  xmin=1, xmax=12, ymin=0, ymax=1.05, xtick={1,2,4,6,8,10,12},
+  ytick={0,0.25,0.5,0.75,1}, yticklabel style={/pgf/number format/precision=2}]
+  \addplot[draw=none, fill=relfill, name path=phi] table[x=K2, y=phi] {data/twoinst.csv} \closedcycle;
+  \addplot[cA] table[x=K2, y=phi] {data/twoinst.csv};
+  \node[lab, text=cA!75!black, align=center] at (axis cs:9.6,0.25) {fund a\\release bonus};
+  \node[lab, text=ink2, align=center] at (axis cs:4.8,0.7) {attribution\\alone};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

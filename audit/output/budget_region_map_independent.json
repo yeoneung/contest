@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "grid_settings": 59049,
+  "checked_settings": 318,
+  "checked_regions": {
+    "1": 102,
+    "2": 125,
+    "4": 55,
+    "0": 36
+  },
+  "max_scaled_slope_error": 1.1147488101915536e-07,
+  "max_zero_gain_error": 4.718447854656915e-16,
+  "method": "Direct coupled stationary best responses; separate release-history payoff tables; one-sided Richardson derivatives; seeded sample 20261112; all both-accelerate grid points included."
+}

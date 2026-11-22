@@ -1,0 +1,133 @@
+{
+  "total_settings": 5043,
+  "grid_points_per_axis": 41,
+  "parameters": {
+    "P": 0.2,
+    "cap": 1.0,
+    "etaR": 1.0,
+    "r": 0.05
+  },
+  "regions": {
+    "0": "Release already strictly optimal at zero attribution",
+    "1": "Both rules accelerate",
+    "2": "Reservation accelerates; recycling slows",
+    "3": "Reservation slows; recycling accelerates",
+    "4": "Both rules slow",
+    "5": "Zero-slope or zero-gain boundary"
+  },
+  "region_counts": {
+    "1": 165,
+    "2": 2509,
+    "0": 1491,
+    "4": 878
+  },
+  "classification_agreement_with_r0": 4528,
+  "regular_interior_settings": 3552,
+  "multiple_sampled_upcrossings": 0,
+  "max_derivative_stability": 1.1316771293672262e-07,
+  "baseline_and_timing": [
+    {
+      "r": 0.0,
+      "certification_before_election": false,
+      "rhoD": 0.3684197416423757,
+      "T0": 0.7883035280466157,
+      "slope_fixed": -0.5182412839170785,
+      "slope_recycling": 0.47629836517768454,
+      "active_constraint": 1,
+      "constraint_gap": 0.047368311803531404,
+      "derivative_stability": 7.908806178563547e-08,
+      "sampled_upcrossings": 1,
+      "gain_at_zero": -0.2677606968540786,
+      "region": 2,
+      "derivative_fixed": -0.4085314324912408,
+      "derivative_recycling": 0.3754676816724041
+    },
+    {
+      "r": 0.0,
+      "certification_before_election": true,
+      "rhoD": 0.6685127507535905,
+      "T0": 1.5019490102251687,
+      "slope_fixed": -1.5250923967012948,
+      "slope_recycling": 0.6344348636810937,
+      "active_constraint": 0,
+      "constraint_gap": 0.4342563753767955,
+      "derivative_stability": 4.754804008533697e-08,
+      "sampled_upcrossings": 1,
+      "gain_at_zero": -0.6355213937081572,
+      "region": 2,
+      "derivative_fixed": -2.29061101572744,
+      "derivative_recycling": 0.9528888155581585
+    },
+    {
+      "r": 0.05,
+      "certification_before_election": false,
+      "rhoD": 0.2907333409006648,
+      "T0": 0.6740169291924942,
+      "slope_fixed": -0.4881020950257208,
+      "slope_recycling": 0.40052873209706247,
+      "active_constraint": 1,
+      "constraint_gap": 0.03672450576371933,
+      "derivative_stability": 7.357294933335587e-08,
+      "sampled_upcrossings": 1,
+      "gain_at_zero": -0.19451537406020616,
+      "region": 2,
+      "derivative_fixed": -0.3289890752216593,
+      "derivative_recycling": 0.26996314606142524
+    },
+    {
+      "r": 0.05,
+      "certification_before_election": true,
+      "rhoD": 0.5789116538547446,
+      "T0": 1.065605040095179,
+      "slope_fixed": -1.1810885807126323,
+      "slope_recycling": 0.4993974113552287,
+      "active_constraint": 0,
+      "constraint_gap": 0.37147524264845433,
+      "derivative_stability": 4.5070623974818094e-08,
+      "sampled_upcrossings": 1,
+      "gain_at_zero": -0.4890307481204123,
+      "region": 2,
+      "derivative_fixed": -1.2585739444062427,
+      "derivative_recycling": 0.5321603985506171
+    },
+    {
+      "r": 0.2,
+      "certification_before_election": false,
+      "rhoD": 0.17141723305405368,
+      "T0": 0.5451998102224533,
+      "slope_fixed": -0.35027224186802436,
+      "slope_recycling": 0.32045376257233743,
+      "active_constraint": 1,
+      "constraint_gap": 0.025748565895569397,
+      "derivative_stability": 7.487570991374852e-08,
+      "sampled_upcrossings": 1,
+      "gain_at_zero": -0.10374816131755363,
+      "region": 2,
+      "derivative_fixed": -0.19096835979264015,
+      "derivative_recycling": 0.1747113305395095
+    },
+    {
+      "r": 0.2,
+      "certification_before_election": true,
+      "rhoD": 0.41030768316650285,
+      "T0": 0.7138735310186308,
+      "slope_fixed": -0.7099862783368044,
+      "slope_recycling": 0.4133771250660727,
+      "active_constraint": 0,
+      "constraint_gap": 0.27335664244421254,
+      "derivative_stability": 5.536547476666261e-08,
+      "sampled_upcrossings": 1,
+      "gain_at_zero": -0.30749632263510723,
+      "region": 2,
+      "derivative_fixed": -0.506840411491071,
+      "derivative_recycling": 0.2950989879132475
+    }
+  ],
+  "method": "History-specific discounted continuation races; both private-information incentive endpoints; 17-point bracketing of the high-attribution release region; implicit-boundary slopes with second-order right differences in bonus and Richardson central differences in attribution.",
+  "normalization": "cap=eta_R=1; slopes=(cap/T0)dT/db; r=.05 is relative to eta_R*cap.",
+  "software": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+  }
+}

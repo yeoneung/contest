@@ -1,0 +1,22 @@
+# Local Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.mplconfig/
+# Machine-specific files and credentials
+.DS_Store
+.env
+.env.*
+kaggle.json
+# TeX build intermediates
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Local archives
+*.zip

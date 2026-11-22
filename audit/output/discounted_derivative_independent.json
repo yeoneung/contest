@@ -1,0 +1,11 @@
+{
+  "draws": 600,
+  "positive_jacobian_cross_term_cases": 274,
+  "max_relative_derivative_error": 8.797802754265535e-09,
+  "minimum_determinant": 1.198379686255109e-07,
+  "method": "Best-response fixed point; analytic derivative from original FOC Jacobian, compared with central differences.",
+  "limitations": [
+    "finite numerical checks do not prove general claims",
+    "does not audit disclosure or welfare proofs"
+  ]
+}

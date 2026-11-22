@@ -1,0 +1,15 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[paper, width=7.6cm, height=4.6cm,
+  xlabel={Attribution share $\rho$}, ylabel={Symmetric release probability $p^*$},
+  xmin=0, xmax=0.7, ymin=-0.03, ymax=1.05, xtick={0,0.1,...,0.7},
+  legend style={at={(0.06,0.5)}, anchor=west}]
+  \addplot[o2, densely dashed] table[x=rho, y=q30] {data/fixed_attribution.csv};
+  \addplot[o3, dash dot] table[x=rho, y=q50] {data/fixed_attribution.csv};
+  \addplot[o4] table[x=rho, y=q85] {data/fixed_attribution.csv};
+  \legend{$q=0.3$, $q=0.5$, $q=0.85$}
+\end{axis}
+\end{tikzpicture}
+\end{document}

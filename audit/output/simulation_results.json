@@ -1,0 +1,54 @@
+{
+  "seed": 480517,
+  "n_per_share": 200000,
+  "scenarios": [
+    {
+      "rho": 0.0,
+      "p_release": 0.0,
+      "method_time": {
+        "theory": 3.3895430396624593,
+        "simulated": 3.3664588935773443,
+        "standard_error": 0.009714362402106786,
+        "z": -2.3762903965893494
+      },
+      "extension_time": {
+        "theory": 3.4491354509833774,
+        "simulated": 3.4255476514997163,
+        "standard_error": 0.009777609966021415,
+        "z": -2.4124299870450994
+      }
+    },
+    {
+      "rho": 0.34,
+      "p_release": 0.5422556764696604,
+      "method_time": {
+        "theory": 1.1936147477089882,
+        "simulated": 1.1909481714230017,
+        "standard_error": 0.006040244816182756,
+        "z": -0.4414682462608752
+      },
+      "extension_time": {
+        "theory": 1.7428109370283775,
+        "simulated": 1.7446370089124368,
+        "standard_error": 0.0059359907541946776,
+        "z": 0.30762714425875043
+      }
+    },
+    {
+      "rho": 0.45,
+      "p_release": 1.0,
+      "method_time": {
+        "theory": 0.0,
+        "simulated": 0.0,
+        "standard_error": 0.0,
+        "z": 0.0
+      },
+      "extension_time": {
+        "theory": 0.9052308107416515,
+        "simulated": 0.9073851234152844,
+        "standard_error": 0.0022761836853443735,
+        "z": 0.9464581823971027
+      }
+    }
+  ]
+}

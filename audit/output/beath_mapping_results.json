@@ -1,0 +1,46 @@
+{
+  "draws": 1000,
+  "max_absolute_objective_error": 1.7763568394002505e-15,
+  "max_absolute_foc_error": 2.7000623958883807e-12,
+  "max_absolute_reaction_slope_error": 5.524863899708521e-10,
+  "reaction_slope_signs": {
+    "positive": 330,
+    "negative": 670
+  },
+  "critical_share_example": 0.2679491924311228,
+  "examples": [
+    {
+      "attribution": 0.2,
+      "originator_intensity": 0.7509561283446561,
+      "follower_intensity": 0.6713108199372952,
+      "originator_response_slope": 0.020247096089111672,
+      "total_hazard": 1.4222669482819512
+    },
+    {
+      "attribution": 0.2679491924311228,
+      "originator_intensity": 0.7320508075688773,
+      "follower_intensity": 0.6207981856438715,
+      "originator_response_slope": -4.718632720705031e-17,
+      "total_hazard": 1.3528489932127488
+    },
+    {
+      "attribution": 0.8,
+      "originator_intensity": 0.6788890862240411,
+      "follower_intensity": 0.18932508734702247,
+      "originator_response_slope": -0.2563352173421593,
+      "total_hazard": 0.8682141735710636
+    },
+    {
+      "attribution": 0.9,
+      "originator_intensity": 0.6981459995167844,
+      "follower_intensity": 0.09721720484555732,
+      "originator_response_slope": -0.33316155642681095,
+      "total_hazard": 0.7953632043623416
+    }
+  ],
+  "scope": [
+    "same quadratic cost for both firms to match Beath et al.; r>0 and share<1",
+    "numerical checks do not establish novelty or a general proof",
+    "future perpetual flow profit versus one-time prize requires s=0 and flow=discount rate times prize"
+  ]
+}

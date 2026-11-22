@@ -1,0 +1,28 @@
+{
+  "draws": 200,
+  "max_abs_gain_error": 1.4210854715202004e-14,
+  "max_relative_time_error": 7.193947045409709e-14,
+  "examples": [
+    {
+      "rho0": 0.3684197416423757,
+      "formula": 0.3273109387052304,
+      "forward_difference": 0.327310821834903,
+      "t2_attribution": 0.78831600969086,
+      "t2_bonus": 0.7802344686984686,
+      "all_release_share": 0.3353000418974065
+    },
+    {
+      "rho0": 0.08217496618965478,
+      "formula": -0.20608236304516536,
+      "forward_difference": -0.2060828253158675,
+      "t2_attribution": 0.6680981749240461,
+      "t2_bonus": 0.6711264744818114,
+      "all_release_share": 0.04825665578409517
+    }
+  ],
+  "limitations": [
+    "finite numerical verification is not proof",
+    "focuses on discounted rate zero and positive prizes",
+    "does not prove global optimality or evaluate welfare"
+  ]
+}

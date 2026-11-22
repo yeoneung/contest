@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "award_cases": 82,
+  "max_scaled_award_error": 4.1379754207137917e-16,
+  "input_sha256": "aeb96a192b1c2f584fc80c41436bb44861b654c5b0cd3d3dcdd39e172d5c6cf9",
+  "boundary_slope_cases": 2,
+  "max_scaled_boundary_slope_error": 6.9458937015559654e-09,
+  "method": "Coupled best responses and separately constructed release-history payoffs. Production code is not imported; saved outputs supply targets only."
+}

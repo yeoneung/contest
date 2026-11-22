@@ -1,0 +1,8 @@
+{
+  "seed": 221031,
+  "races": 1000,
+  "piecewise_deviations": 4000,
+  "maximum_deviation_gain": -3.0847329933469947e-09,
+  "violations": 0,
+  "limitations": "Tests only a finite selection of deterministic piecewise-constant deviations; does not verify every admissible process or nonstationary equilibrium."
+}

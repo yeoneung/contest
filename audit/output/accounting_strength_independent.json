@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "slope_cases": 80,
+  "magnitude_grid_points": 19683,
+  "magnitude_grid_sha256": "13d12d7f2455793e9aa3b2fd256401d7c747d67881391c2942debd1fe267b26c",
+  "max_scaled_slope_error": 1.3768298750273657e-06,
+  "rare_rediscovery_sufficient_condition_cases": 25,
+  "magnitude_cases": 39,
+  "alternative_bonus_checks": 663,
+  "max_scaled_magnitude_error": 5.216455319421553e-15,
+  "same_bonus_baseline": [
+    {
+      "rule": "fixed",
+      "rho": 9.28965851643688e-09,
+      "time": 0.7289797612144444,
+      "welfare8": 8.26827705751965
+    },
+    {
+      "rule": "recycling",
+      "rho": 0.24589761501724403,
+      "time": 0.8760264409696922,
+      "welfare8": 8.201006925330466
+    }
+  ],
+  "method": "Coupled stationary best responses, separately constructed release-history payoffs, fresh threshold roots, and a separate feasible-bonus grid; production outputs supply comparison targets only.",
+  "scope": "Finite numerical checks support the analytical proof; the coarser optimization check is not a global certificate. Independent refers to implementation, not external authors."
+}

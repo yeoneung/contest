@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "parameter_draws": 160,
+  "max_scaled_penalty_error": 3.4401542042258645e-15,
+  "max_scaled_reconsideration_error": 1.6156323149249537e-15,
+  "penalty_boundary_independent": 0.38901142407000394,
+  "seed": 20261113,
+  "reconsideration_boundary_independent": 0.36841974164239155,
+  "welfare_K2_boundary_independent": 2.8522403963520664,
+  "welfare_delta_boundary_independent": 0.03204152268491568,
+  "implementation": "Coupled best responses; independent certified-state payoff enumeration at three rival release probabilities; no production scalar-hazard or release-gain formulas.",
+  "scope": "Finite numerical checks; reconsideration allows one additional election, not unrestricted disclosure timing."
+}

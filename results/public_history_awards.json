@@ -1,0 +1,1444 @@
+{
+  "date": "2026-11-21",
+  "public_rule": "Winner i receives cap*(1-tau+tau*D_i), where D_i indicates date-zero release.",
+  "certification_for_play_retained": true,
+  "readiness_used_in_public_payout": false,
+  "baseline": {
+    "parameters": {
+      "P": 0.2,
+      "cap": 1.0,
+      "q": 0.5,
+      "etaR": 1.0,
+      "etaI": 0.05,
+      "etaE": 4.0,
+      "tau": 0.4
+    },
+    "gain0": 0.049267681063341506,
+    "gain1": 0.016328280957716296,
+    "unique_release": true,
+    "time_if_release": 0.5715732649099571,
+    "welfare_if_release": 8.308916216107892,
+    "expected_spending_if_release": 0.8325607168433417
+  },
+  "comparison_cases": [
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": -0.16131448089404193,
+      "gain1": -0.16940803449423616,
+      "unique_release": false,
+      "time_if_release": 1.133240780144171,
+      "welfare_if_release": 7.926869281079927,
+      "expected_spending_if_release": 0.9348503131091683
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.04394183664821617,
+      "gain1": 0.03076607660596609,
+      "unique_release": true,
+      "time_if_release": 1.2924682704230506,
+      "welfare_if_release": 7.860285563904553,
+      "expected_spending_if_release": 0.8833699416807709
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.26597900450725026,
+      "gain1": 0.2419727659743104,
+      "unique_release": true,
+      "time_if_release": 1.557649047105497,
+      "welfare_if_release": 7.73654487865779,
+      "expected_spending_if_release": 0.8516601465408596
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": -0.24124906694463957,
+      "gain1": -0.2493426205448338,
+      "unique_release": false,
+      "time_if_release": 0.8285043858996988,
+      "welfare_if_release": 8.107834277405935,
+      "expected_spending_if_release": 0.9170511633418914
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": -0.03731981316840223,
+      "gain1": -0.05049557321065232,
+      "unique_release": false,
+      "time_if_release": 0.9428930146071254,
+      "welfare_if_release": 8.062142517034138,
+      "expected_spending_if_release": 0.8492183646612316
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.18506002030900545,
+      "gain1": 0.1610537817760656,
+      "unique_release": true,
+      "time_if_release": 1.133240780144171,
+      "welfare_if_release": 7.972065005193109,
+      "expected_spending_if_release": 0.8045509393275047
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": -0.3722172638810145,
+      "gain1": -0.38031081748120876,
+      "unique_release": false,
+      "time_if_release": 0.4537037037037036,
+      "welfare_if_release": 8.391531438415159,
+      "expected_spending_if_release": 0.8814814814814818
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": -0.1779944679048075,
+      "gain1": -0.19117022794705757,
+      "unique_release": false,
+      "time_if_release": 0.5120976865466095,
+      "welfare_if_release": 8.367960639565046,
+      "expected_spending_if_release": 0.776747622457789
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.03329381889131804,
+      "gain1": 0.009287580358378185,
+      "unique_release": true,
+      "time_if_release": 0.609806117843463,
+      "welfare_if_release": 8.317354158942685,
+      "expected_spending_if_release": 0.696023252657635
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": -0.0962788189048149,
+      "gain1": -0.10437237250500914,
+      "unique_release": false,
+      "time_if_release": 1.133240780144171,
+      "welfare_if_release": 7.926869281079927,
+      "expected_spending_if_release": 0.9348503131091683
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.09811136960566991,
+      "gain1": 0.08493560956341982,
+      "unique_release": true,
+      "time_if_release": 1.2924682704230506,
+      "welfare_if_release": 7.860285563904553,
+      "expected_spending_if_release": 0.8833699416807709
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.30923123419224774,
+      "gain1": 0.28522499565930787,
+      "unique_release": true,
+      "time_if_release": 1.557649047105497,
+      "welfare_if_release": 7.73654487865779,
+      "expected_spending_if_release": 0.8516601465408596
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": -0.17621340495541254,
+      "gain1": -0.18430695855560678,
+      "unique_release": false,
+      "time_if_release": 0.8285043858996988,
+      "welfare_if_release": 8.107834277405935,
+      "expected_spending_if_release": 0.9170511633418914
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.01684971978905149,
+      "gain1": 0.003673959746801403,
+      "unique_release": true,
+      "time_if_release": 0.9428930146071254,
+      "welfare_if_release": 8.062142517034138,
+      "expected_spending_if_release": 0.8492183646612316
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.2283122499940029,
+      "gain1": 0.20430601146106303,
+      "unique_release": true,
+      "time_if_release": 1.133240780144171,
+      "welfare_if_release": 7.972065005193109,
+      "expected_spending_if_release": 0.8045509393275047
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": -0.30718160189178745,
+      "gain1": -0.3152751554919817,
+      "unique_release": false,
+      "time_if_release": 0.4537037037037036,
+      "welfare_if_release": 8.391531438415159,
+      "expected_spending_if_release": 0.8814814814814818
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": -0.12382493494735376,
+      "gain1": -0.13700069498960385,
+      "unique_release": false,
+      "time_if_release": 0.5120976865466095,
+      "welfare_if_release": 8.367960639565046,
+      "expected_spending_if_release": 0.776747622457789
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.07654604857631549,
+      "gain1": 0.05253981004337563,
+      "unique_release": true,
+      "time_if_release": 0.609806117843463,
+      "welfare_if_release": 8.317354158942685,
+      "expected_spending_if_release": 0.696023252657635
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": 0.07186645679389003,
+      "gain1": 0.0637729031936958,
+      "unique_release": true,
+      "time_if_release": 1.133240780144171,
+      "welfare_if_release": 7.926869281079927,
+      "expected_spending_if_release": 0.9348503131091683
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.23690999358539905,
+      "gain1": 0.22373423354314895,
+      "unique_release": true,
+      "time_if_release": 1.2924682704230506,
+      "welfare_if_release": 7.860285563904553,
+      "expected_spending_if_release": 0.8833699416807709
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.41855634009652265,
+      "gain1": 0.39455010156358283,
+      "unique_release": true,
+      "time_if_release": 1.557649047105497,
+      "welfare_if_release": 7.73654487865779,
+      "expected_spending_if_release": 0.8516601465408596
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": -0.00806812925670762,
+      "gain1": -0.01616168285690185,
+      "unique_release": false,
+      "time_if_release": 0.8285043858996988,
+      "welfare_if_release": 8.107834277405935,
+      "expected_spending_if_release": 0.9170511633418914
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.15564834376878062,
+      "gain1": 0.14247258372653052,
+      "unique_release": true,
+      "time_if_release": 0.9428930146071254,
+      "welfare_if_release": 8.062142517034138,
+      "expected_spending_if_release": 0.8492183646612316
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.33763735589827787,
+      "gain1": 0.313631117365338,
+      "unique_release": true,
+      "time_if_release": 1.133240780144171,
+      "welfare_if_release": 7.972065005193109,
+      "expected_spending_if_release": 0.8045509393275047
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": -0.13903632619308254,
+      "gain1": -0.14712987979327677,
+      "unique_release": false,
+      "time_if_release": 0.4537037037037036,
+      "welfare_if_release": 8.391531438415159,
+      "expected_spending_if_release": 0.8814814814814818
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.014973689032375365,
+      "gain1": 0.0017979289901252776,
+      "unique_release": true,
+      "time_if_release": 0.5120976865466095,
+      "welfare_if_release": 8.367960639565046,
+      "expected_spending_if_release": 0.776747622457789
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.2,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.18587115448059047,
+      "gain1": 0.16186491594765062,
+      "unique_release": true,
+      "time_if_release": 0.609806117843463,
+      "welfare_if_release": 8.317354158942685,
+      "expected_spending_if_release": 0.696023252657635
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": -0.014430208244850556,
+      "gain1": -0.03466409224533612,
+      "unique_release": false,
+      "time_if_release": 1.0374305851081282,
+      "welfare_if_release": 7.978097697244053,
+      "expected_spending_if_release": 0.9511377348318761
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.1541219133105727,
+      "gain1": 0.1211825132049475,
+      "unique_release": true,
+      "time_if_release": 1.1568512028172877,
+      "welfare_if_release": 7.928159909362522,
+      "expected_spending_if_release": 0.9125274562605781
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.3400975573421747,
+      "gain1": 0.280081961009825,
+      "unique_release": true,
+      "time_if_release": 1.3557367853291227,
+      "welfare_if_release": 7.83535439542745,
+      "expected_spending_if_release": 0.8887451099056447
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": -0.06438932452647408,
+      "gain1": -0.08462320852695965,
+      "unique_release": false,
+      "time_if_release": 0.808878289424774,
+      "welfare_if_release": 8.113821444488558,
+      "expected_spending_if_release": 0.9377883725064184
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.1033333821751862,
+      "gain1": 0.07039398206956099,
+      "unique_release": true,
+      "time_if_release": 0.8946697609553439,
+      "welfare_if_release": 8.079552624209711,
+      "expected_spending_if_release": 0.8869137734959236
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.28952319221827166,
+      "gain1": 0.229507595885922,
+      "unique_release": true,
+      "time_if_release": 1.0374305851081282,
+      "welfare_if_release": 8.011994490328938,
+      "expected_spending_if_release": 0.8534132044956284
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": -0.14624444761170843,
+      "gain1": -0.166478331612194,
+      "unique_release": false,
+      "time_if_release": 0.5277777777777777,
+      "welfare_if_release": 8.326594315245476,
+      "expected_spending_if_release": 0.9111111111111112
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.015411722964932928,
+      "gain1": -0.017527677140692283,
+      "unique_release": false,
+      "time_if_release": 0.5715732649099571,
+      "welfare_if_release": 8.308916216107892,
+      "expected_spending_if_release": 0.8325607168433417
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.19466931633221704,
+      "gain1": 0.1346537199998674,
+      "unique_release": true,
+      "time_if_release": 0.6448545883825971,
+      "welfare_if_release": 8.27096135564112,
+      "expected_spending_if_release": 0.7720174394932262
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": 0.02621708049841634,
+      "gain1": 0.005983196497930776,
+      "unique_release": true,
+      "time_if_release": 1.0374305851081282,
+      "welfare_if_release": 7.978097697244053,
+      "expected_spending_if_release": 0.9511377348318761
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.18797787140898128,
+      "gain1": 0.15503847130335607,
+      "unique_release": true,
+      "time_if_release": 1.1568512028172877,
+      "welfare_if_release": 7.928159909362522,
+      "expected_spending_if_release": 0.9125274562605781
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.3671302008952981,
+      "gain1": 0.3071146045629484,
+      "unique_release": true,
+      "time_if_release": 1.3557367853291227,
+      "welfare_if_release": 7.83535439542745,
+      "expected_spending_if_release": 0.8887451099056447
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": -0.023742035783207188,
+      "gain1": -0.04397591978369275,
+      "unique_release": false,
+      "time_if_release": 0.808878289424774,
+      "welfare_if_release": 8.113821444488558,
+      "expected_spending_if_release": 0.9377883725064184
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.13718934027359478,
+      "gain1": 0.10424994016796957,
+      "unique_release": true,
+      "time_if_release": 0.8946697609553439,
+      "welfare_if_release": 8.079552624209711,
+      "expected_spending_if_release": 0.8869137734959236
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.31655583577139507,
+      "gain1": 0.2565402394390454,
+      "unique_release": true,
+      "time_if_release": 1.0374305851081282,
+      "welfare_if_release": 8.011994490328938,
+      "expected_spending_if_release": 0.8534132044956284
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": -0.10559715886844151,
+      "gain1": -0.12583104286892707,
+      "unique_release": false,
+      "time_if_release": 0.5277777777777777,
+      "welfare_if_release": 8.326594315245476,
+      "expected_spending_if_release": 0.9111111111111112
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.049267681063341506,
+      "gain1": 0.016328280957716296,
+      "unique_release": true,
+      "time_if_release": 0.5715732649099571,
+      "welfare_if_release": 8.308916216107892,
+      "expected_spending_if_release": 0.8325607168433417
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.22170195988534044,
+      "gain1": 0.1616863635529908,
+      "unique_release": true,
+      "time_if_release": 0.6448545883825971,
+      "welfare_if_release": 8.27096135564112,
+      "expected_spending_if_release": 0.7720174394932262
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": 0.13130787781010692,
+      "gain1": 0.11107399380962135,
+      "unique_release": true,
+      "time_if_release": 1.0374305851081282,
+      "welfare_if_release": 7.978097697244053,
+      "expected_spending_if_release": 0.9511377348318761
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.27472701139631195,
+      "gain1": 0.24178761129068677,
+      "unique_release": true,
+      "time_if_release": 1.1568512028172877,
+      "welfare_if_release": 7.928159909362522,
+      "expected_spending_if_release": 0.9125274562605781
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.43545839208546994,
+      "gain1": 0.3754427957531203,
+      "unique_release": true,
+      "time_if_release": 1.3557367853291227,
+      "welfare_if_release": 7.83535439542745,
+      "expected_spending_if_release": 0.8887451099056447
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": 0.08134876152848339,
+      "gain1": 0.061114877527997824,
+      "unique_release": true,
+      "time_if_release": 0.808878289424774,
+      "welfare_if_release": 8.113821444488558,
+      "expected_spending_if_release": 0.9377883725064184
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.22393848026092547,
+      "gain1": 0.19099908015530026,
+      "unique_release": true,
+      "time_if_release": 0.8946697609553439,
+      "welfare_if_release": 8.079552624209711,
+      "expected_spending_if_release": 0.8869137734959236
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.3848840269615669,
+      "gain1": 0.3248684306292173,
+      "unique_release": true,
+      "time_if_release": 1.0374305851081282,
+      "welfare_if_release": 8.011994490328938,
+      "expected_spending_if_release": 0.8534132044956284
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": -0.0005063615567509339,
+      "gain1": -0.020740245557236497,
+      "unique_release": false,
+      "time_if_release": 0.5277777777777777,
+      "welfare_if_release": 8.326594315245476,
+      "expected_spending_if_release": 0.9111111111111112
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.1360168210506722,
+      "gain1": 0.10307742094504699,
+      "unique_release": true,
+      "time_if_release": 0.5715732649099571,
+      "welfare_if_release": 8.308916216107892,
+      "expected_spending_if_release": 0.8325607168433417
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.5,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.29003015107551233,
+      "gain1": 0.23001455474316265,
+      "unique_release": true,
+      "time_if_release": 0.6448545883825971,
+      "welfare_if_release": 8.27096135564112,
+      "expected_spending_if_release": 0.7720174394932262
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": 0.13245406440434085,
+      "gain1": 0.10007985000356392,
+      "unique_release": true,
+      "time_if_release": 0.893715292554064,
+      "welfare_if_release": 8.054940321490244,
+      "expected_spending_if_release": 0.9755688674159382
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.26430198997292925,
+      "gain1": 0.21159894980392893,
+      "unique_release": true,
+      "time_if_release": 0.9534256014086439,
+      "welfare_if_release": 8.029971427549478,
+      "expected_spending_if_release": 0.956263728130289
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.4142161101770991,
+      "gain1": 0.31819115604533965,
+      "unique_release": true,
+      "time_if_release": 1.0528683926645612,
+      "welfare_if_release": 7.983568670581942,
+      "expected_spending_if_release": 0.9443725549528224
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": 0.11247041789169145,
+      "gain1": 0.08009620349091452,
+      "unique_release": true,
+      "time_if_release": 0.779439144712387,
+      "welfare_if_release": 8.122802195112497,
+      "expected_spending_if_release": 0.9688941862532092
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.24398657751877467,
+      "gain1": 0.19128353734977432,
+      "unique_release": true,
+      "time_if_release": 0.8223348804776719,
+      "welfare_if_release": 8.105667784973074,
+      "expected_spending_if_release": 0.9434568867479618
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.3939863641275379,
+      "gain1": 0.29796140999577847,
+      "unique_release": true,
+      "time_if_release": 0.893715292554064,
+      "welfare_if_release": 8.071888718032687,
+      "expected_spending_if_release": 0.9267066022478142
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": 0.07972836865759772,
+      "gain1": 0.047354154256820796,
+      "unique_release": true,
+      "time_if_release": 0.6388888888888888,
+      "welfare_if_release": 8.229188630490956,
+      "expected_spending_if_release": 0.9555555555555556
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.20881791383467338,
+      "gain1": 0.15611487366567303,
+      "unique_release": true,
+      "time_if_release": 0.6607866324549785,
+      "welfare_if_release": 8.220349580922164,
+      "expected_spending_if_release": 0.9162803584216709
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.01,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.3560448137731161,
+      "gain1": 0.26001985964135665,
+      "unique_release": true,
+      "time_if_release": 0.6974272941912986,
+      "welfare_if_release": 8.201372150688778,
+      "expected_spending_if_release": 0.8860087197466131
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": 0.1487129799016476,
+      "gain1": 0.11633876550087069,
+      "unique_release": true,
+      "time_if_release": 0.893715292554064,
+      "welfare_if_release": 8.054940321490244,
+      "expected_spending_if_release": 0.9755688674159382
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.2778443732122927,
+      "gain1": 0.22514133304329237,
+      "unique_release": true,
+      "time_if_release": 0.9534256014086439,
+      "welfare_if_release": 8.029971427549478,
+      "expected_spending_if_release": 0.956263728130289
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.42502916759834847,
+      "gain1": 0.32900421346658903,
+      "unique_release": true,
+      "time_if_release": 1.0528683926645612,
+      "welfare_if_release": 7.983568670581942,
+      "expected_spending_if_release": 0.9443725549528224
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": 0.1287293333889982,
+      "gain1": 0.09635511898822127,
+      "unique_release": true,
+      "time_if_release": 0.779439144712387,
+      "welfare_if_release": 8.122802195112497,
+      "expected_spending_if_release": 0.9688941862532092
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.2575289607581381,
+      "gain1": 0.20482592058913776,
+      "unique_release": true,
+      "time_if_release": 0.8223348804776719,
+      "welfare_if_release": 8.105667784973074,
+      "expected_spending_if_release": 0.9434568867479618
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.4047994215487873,
+      "gain1": 0.30877446741702785,
+      "unique_release": true,
+      "time_if_release": 0.893715292554064,
+      "welfare_if_release": 8.071888718032687,
+      "expected_spending_if_release": 0.9267066022478142
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": 0.09598728415490448,
+      "gain1": 0.06361306975412756,
+      "unique_release": true,
+      "time_if_release": 0.6388888888888888,
+      "welfare_if_release": 8.229188630490956,
+      "expected_spending_if_release": 0.9555555555555556
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.22236029707403682,
+      "gain1": 0.16965725690503647,
+      "unique_release": true,
+      "time_if_release": 0.6607866324549785,
+      "welfare_if_release": 8.220349580922164,
+      "expected_spending_if_release": 0.9162803584216709
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.05,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.3668578711943654,
+      "gain1": 0.270832917062606,
+      "unique_release": true,
+      "time_if_release": 0.6974272941912986,
+      "welfare_if_release": 8.201372150688778,
+      "expected_spending_if_release": 0.8860087197466131
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.2
+      },
+      "gain0": 0.19074929882632383,
+      "gain1": 0.1583750844255469,
+      "unique_release": true,
+      "time_if_release": 0.893715292554064,
+      "welfare_if_release": 8.054940321490244,
+      "expected_spending_if_release": 0.9755688674159382
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.4
+      },
+      "gain0": 0.31254402920722496,
+      "gain1": 0.2598409890382246,
+      "unique_release": true,
+      "time_if_release": 0.9534256014086439,
+      "welfare_if_release": 8.029971427549478,
+      "expected_spending_if_release": 0.956263728130289
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 0.5,
+        "tau": 0.6
+      },
+      "gain0": 0.4523604440744172,
+      "gain1": 0.3563354899426578,
+      "unique_release": true,
+      "time_if_release": 1.0528683926645612,
+      "welfare_if_release": 7.983568670581942,
+      "expected_spending_if_release": 0.9443725549528224
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.2
+      },
+      "gain0": 0.1707656523136744,
+      "gain1": 0.13839143791289749,
+      "unique_release": true,
+      "time_if_release": 0.779439144712387,
+      "welfare_if_release": 8.122802195112497,
+      "expected_spending_if_release": 0.9688941862532092
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.4
+      },
+      "gain0": 0.2922286167530704,
+      "gain1": 0.23952557658407003,
+      "unique_release": true,
+      "time_if_release": 0.8223348804776719,
+      "welfare_if_release": 8.105667784973074,
+      "expected_spending_if_release": 0.9434568867479618
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 1.0,
+        "tau": 0.6
+      },
+      "gain0": 0.432130698024856,
+      "gain1": 0.33610574389309655,
+      "unique_release": true,
+      "time_if_release": 0.893715292554064,
+      "welfare_if_release": 8.071888718032687,
+      "expected_spending_if_release": 0.9267066022478142
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.2
+      },
+      "gain0": 0.1380236030795807,
+      "gain1": 0.10564938867880377,
+      "unique_release": true,
+      "time_if_release": 0.6388888888888888,
+      "welfare_if_release": 8.229188630490956,
+      "expected_spending_if_release": 0.9555555555555556
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.4
+      },
+      "gain0": 0.25705995306896906,
+      "gain1": 0.2043569128999687,
+      "unique_release": true,
+      "time_if_release": 0.6607866324549785,
+      "welfare_if_release": 8.220349580922164,
+      "expected_spending_if_release": 0.9162803584216709
+    },
+    {
+      "parameters": {
+        "P": 0.2,
+        "cap": 1.0,
+        "q": 0.8,
+        "etaR": 1.0,
+        "etaI": 0.5,
+        "etaE": 4.0,
+        "tau": 0.6
+      },
+      "gain0": 0.39418914767043417,
+      "gain1": 0.29816419353867474,
+      "unique_release": true,
+      "time_if_release": 0.6974272941912986,
+      "welfare_if_release": 8.201372150688778,
+      "expected_spending_if_release": 0.8860087197466131
+    }
+  ],
+  "certified_baseline": {
+    "time": 0.4978769459079083,
+    "welfare": 8.33463293689335,
+    "expected_spending": 1.0
+  },
+  "baseline_rediscovery_boundary": {
+    "priority_ratio": 0.2,
+    "q": 0.5,
+    "method_use_ratio": 4.0,
+    "ratio_at_zero_reservation_slope": 0.29679924050043643,
+    "bracket": [
+      {
+        "priority_ratio": 0.2,
+        "q": 0.5,
+        "mI": 0.29579924050043643,
+        "mE": 4.0,
+        "rhoD": 0.22740526500060365,
+        "T0": 0.6444218726241997,
+        "D_B": -0.09994887349600906,
+        "D_rho": 0.7762067404931556,
+        "slope_fixed": -0.0008525442759306223,
+        "slope_recycling": 0.5444136066289268,
+        "gain_at_zero": -0.17723448493677574,
+        "region": 2
+      },
+      {
+        "priority_ratio": 0.2,
+        "q": 0.5,
+        "mI": 0.29779924050043644,
+        "mE": 4.0,
+        "rhoD": 0.22681824532995906,
+        "T0": 0.6439326108003929,
+        "D_B": -0.10005096325075641,
+        "D_rho": 0.7764096551408175,
+        "slope_fixed": 0.0008489548576144923,
+        "slope_recycling": 0.5446639063396865,
+        "gain_at_zero": -0.17682320366631404,
+        "region": 4
+      }
+    ]
+  },
+  "interpretation": "Winning stakes may differ under a contract based only on public research history. The two award extensions are feasible examples, not optimal mechanisms over a broader contract space. Outcomes labeled if_release are equilibrium outcomes only when both gains are positive."
+}

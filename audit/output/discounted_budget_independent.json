@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "grid_settings": 5043,
+  "checked_grid_settings": 325,
+  "checked_regions": {
+    "1": 165,
+    "2": 80,
+    "4": 50,
+    "0": 30
+  },
+  "checked_timing_cases": 6,
+  "max_scaled_slope_error": 3.77587101585793e-08,
+  "method": "Direct coupled best responses and expected payoffs; history-specific prizes; independently resolved incentive boundaries and right-sided Richardson derivatives; no production solver or slope imports.",
+  "seed": 20261112
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://www.kaggle.com/api/v1/datasets/download/kaggle/meta-kaggle/Teams.csv?datasetVersionNumber=2401",
+  "dataset_version": 2401,
+  "retrieved_utc": "2026-11-21T08:02:16.284889+00:00",
+  "headers": {
+    "Content-Length": "798980557",
+    "ETag": "\"3c69ce8f47fd90d80fba4e2d795ca568\"",
+    "Last-Modified": "Fri, 20 Nov 2026 16:41:19 GMT",
+    "x-goog-generation": "1795192879734028",
+    "x-goog-hash": "crc32c=gYrFlg=="
+  },
+  "source_bytes": 798980557,
+  "source_sha256": "adc74f0836354fae1b7a8a079258f09e71d0d62e89c90241356cbf7b9905c076",
+  "source_rows": 9685815,
+  "retained_rows": 19587,
+  "extracted_sha256": "f539f7e07e05c3e043a4b5f4d8955c554af6c7494d4f0b565cf9d379e7a286cf",
+  "seconds": 97.53
+}

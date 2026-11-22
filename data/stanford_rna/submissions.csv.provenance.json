@@ -1,0 +1,18 @@
+{
+  "url": "https://www.kaggle.com/api/v1/datasets/download/kaggle/meta-kaggle/Submissions.csv?datasetVersionNumber=2401",
+  "dataset_version": 2401,
+  "retrieved_utc": "2026-11-21T07:57:42.711982+00:00",
+  "headers": {
+    "Content-Length": "2731834901",
+    "ETag": "\"3242ce5761d3684c1cf1b39140da2f91\"",
+    "Last-Modified": "Fri, 20 Nov 2026 16:42:08 GMT",
+    "x-goog-generation": "1795192928072772",
+    "x-goog-hash": "crc32c=WryWbw=="
+  },
+  "source_bytes": 2731834901,
+  "source_sha256": "896943f4b5188c749b2c6670549b0b935708ffa7f906e3720346b06836dc9a1f",
+  "source_rows": 19870396,
+  "retained_rows": 7191,
+  "extracted_sha256": "93d5d40cdcf10fc0e69f9576ae7e3aa691499e38a11953b693d54b53e9fc724e",
+  "seconds": 299.06
+}

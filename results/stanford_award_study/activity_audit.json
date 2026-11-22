@@ -1,0 +1,40 @@
+{
+  "competition_id": 87793,
+  "snapshot": 2401,
+  "retained_case_teams": 11281,
+  "final_ranked_nonbenchmark_teams": 1410,
+  "retained_submission_rows": 2762,
+  "predeadline_flag_submission_rows": 2437,
+  "selected_flag_counts": {
+    "True": 0,
+    "False": 2708,
+    "": 54
+  },
+  "reevaluation_dated_rows": 2437,
+  "source_versions_matched": 82,
+  "leader_authored_source_versions_matched": 73,
+  "decision_date": "2025-04-23",
+  "submission_deadline": "2025-05-29",
+  "days_to_deadline": 36,
+  "readiness_floors": [
+    {
+      "validation_TM_threshold": 0.2,
+      "documented_ready_teams": 5,
+      "cohort_teams": 1410,
+      "readiness_floor": 0.0035460992907801418
+    },
+    {
+      "validation_TM_threshold": 0.3,
+      "documented_ready_teams": 3,
+      "cohort_teams": 1410,
+      "readiness_floor": 0.002127659574468085
+    },
+    {
+      "validation_TM_threshold": 0.4,
+      "documented_ready_teams": 2,
+      "cohort_teams": 1410,
+      "readiness_floor": 0.0014184397163120568
+    }
+  ],
+  "interpretation": "For the retrospective pool of final-ranked teams, a qualifying source version authored by its final team leader and created before April 23 documents that the leader already held a working predictor. With the additional planning assumption that this demonstrates possession of a usable method and that two candidates are drawn independently from this pool, the fraction supplies a conservative readiness floor. Unmatched, later, and non-leader-authored versions do not establish non-readiness. Thresholds are analyst-specified, not the official VFOLD sharing criterion. SubmissionDate is a re-evaluation date and is not used as the creation clock. This does not estimate q or research efficiency ratios."
+}

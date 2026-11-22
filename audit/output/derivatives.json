@@ -1,0 +1,7 @@
+{
+  "seed": 84822,
+  "draws": 400,
+  "finite_difference_step": 1e-07,
+  "max_relative_error": 1.2666228747504324e-05,
+  "limitations": "One-sided finite differences test this boundary identity numerically, not its complete proof."
+}

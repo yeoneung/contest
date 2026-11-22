@@ -1,0 +1,46 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\begin{document}
+\begin{tikzpicture}[
+  stage/.style={rounded corners=3pt, draw=ink3, line width=0.5pt, fill=white,
+     text width=3.05cm, align=flush left, inner sep=4.5pt, font=\footnotesize, text=ink},
+  state/.style={rounded corners=3pt, line width=0.5pt, text width=2.38cm,
+     align=flush left, inner sep=4pt, font=\footnotesize, text=ink, minimum height=2.45cm},
+  tick/.style={circle, fill=cA, inner sep=2.1pt},
+]
+\draw[-{Latex[length=2.6mm]}, line width=0.8pt, ink2] (-0.1,0) -- (15.0,0)
+   node[right, font=\footnotesize, text=ink2] {time};
+\foreach \x/\t in {1.55/{$t=0^-$}, 5.45/{$t=0$}, 9.35/{$t=0^+$}, 13.25/{$t>0$}}{
+  \node[tick] at (\x,0) {};
+  \node[font=\footnotesize, text=ink2, above=3pt] at (\x,0) {\t};
+}
+\node[stage, anchor=north] (s0) at (1.55,-0.42) {\textcolor{cA}{\textbf{Readiness}}\\[2pt]
+  Each team privately learns whether it already holds a correct foundational result.};
+\node[stage, anchor=north] (s1) at (5.45,-0.42) {\textcolor{cA}{\textbf{Release choice}}\\[2pt]
+  A ready team releases its method ($D$) and claims $P$, or commits to withhold it ($W$).};
+\node[stage, anchor=north] (s2) at (9.35,-0.42) {\textcolor{cA}{\textbf{Certification}}\\[2pt]
+  A verifier announces who was ready. No proof is revealed.};
+\node[stage, anchor=north] (s3) at (13.25,-0.42) {\textcolor{cA}{\textbf{Effort and arrivals}}\\[2pt]
+  Teams choose intensities. Credit for the extension follows $(\rho,\beta)$.};
+\foreach \x/\n in {1.55/s0, 5.45/s1, 9.35/s2, 13.25/s3}{
+  \draw[ink3, line width=0.5pt] (\x,0) -- (\n.north);}
+\begin{scope}[yshift=-3.05cm]
+\node[state, fill=relfill, draw=cA!45, anchor=north west] (a) at (0,0) {\textbf{Both ready, $(D,D)$}\\[2pt]
+  Joint priority. Two originators race for the extension.\\[3pt]\textcolor{ink2}{$\eta_R$ vs.\ $\eta_R$}};
+\node[state, fill=relfill, draw=cA!45, right=0.2cm of a] (b) {\textbf{Both ready, $(D,W)$}\\[2pt]
+  A sole originator races an independently ready follower.\\[3pt]\textcolor{ink2}{$\eta_R$ vs.\ $\eta_R$}};
+\node[state, fill=wfill, draw=ink3, right=0.2cm of b] (c) {\textbf{Both ready, $(W,W)$}\\[2pt]
+  Private race. The first extension wins $P+B$.\\[3pt]\textcolor{ink2}{$\eta_R$ vs.\ $\eta_R$}};
+\node[state, fill=relfill, draw=cA!45, right=0.2cm of c] (d) {\textbf{One ready, $D$}\\[2pt]
+  The originator races a rival who builds on the released method.\\[3pt]\textcolor{ink2}{$\eta_R$ vs.\ $\eta_E$}};
+\node[state, fill=wfill, draw=ink3, right=0.2cm of d] (e) {\textbf{One ready, $W$}\\[2pt]
+  A private extension races independent rediscovery.\\[3pt]\textcolor{ink2}{$\eta_R$ vs.\ $\eta_I$}};
+\end{scope}
+\coordinate (bar) at (13.25,-2.62);
+\draw[ink3, line width=0.6pt] (s3.south) -- (bar);
+\draw[ink3, line width=0.6pt] (a.north |- bar) -- (e.north |- bar);
+\foreach \n in {a,b,c,d,e}{
+  \draw[-{Latex[length=1.8mm]}, ink3, line width=0.6pt] (\n.north |- bar) -- (\n.north);}
+\node[font=\footnotesize, text=ink2, anchor=south west, inner sep=1pt] at (a.north west |- bar) {Certified continuation states};
+\end{tikzpicture}
+\end{document}

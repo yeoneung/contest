@@ -1,0 +1,15 @@
+{
+  "dataset": "Meta Kaggle",
+  "url": "https://www.kaggle.com/datasets/kaggle/meta-kaggle",
+  "license": "Apache 2.0",
+  "version": 2401,
+  "last_updated": "2026-11-20T16:35:55.38Z",
+  "accessed": "2026-11-21",
+  "publisher_coverage_notice": "Rows, columns, and tables are filtered and transformed; not a complete database dump.",
+  "case_ids": {
+    "2025": 87793,
+    "2026": 118765
+  },
+  "competition_table_source_sha256": "7418650dec91193312b44fe29b7379a68f4ac5306bcbba9f5da231fe7a1fd21d",
+  "extraction": "Select competition identifiers 87793 and 118765. Retain only listed operational fields; no overview-text redistribution. Teams and Submissions are fully streamed and filtered by identifiers in fetch_stanford_activity.py."
+}

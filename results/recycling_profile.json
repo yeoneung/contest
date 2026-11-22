@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "P": 0.2,
+    "K": 1.0,
+    "etaR": 1.0,
+    "etaI": 0.05,
+    "etaE": 4.0,
+    "q": 0.5
+  },
+  "delta": 0.1,
+  "K1": 1.0,
+  "welfare_numeric": [
+    {
+      "K2": 2.0,
+      "rho": 0.4792509601092644,
+      "b": 0.0,
+      "welfare": 2.683494362823973,
+      "grid_points": 1001,
+      "feasible_grid_points": 1001
+    },
+    {
+      "K2": 4.0,
+      "rho": 0.3684197422940294,
+      "b": 0.0,
+      "welfare": 4.533180316532747,
+      "grid_points": 1001,
+      "feasible_grid_points": 1001
+    },
+    {
+      "K2": 8.0,
+      "rho": 0.3684197365588765,
+      "b": 7.846161286998954e-09,
+      "welfare": 8.243393345901978,
+      "grid_points": 1001,
+      "feasible_grid_points": 1001
+    }
+  ],
+  "method": "Unique concave inner bonus optimum via derivative clipping/Brent root; 1001-point outer attribution grid with local refinement. No certificate for unexamined outer intervals."
+}

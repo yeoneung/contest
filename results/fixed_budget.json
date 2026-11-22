@@ -1,0 +1,88 @@
+{
+  "baseline": {
+    "parameters": {
+      "P": 0.2,
+      "K": 1.0,
+      "etaR": 1.0,
+      "etaI": 0.05,
+      "etaE": 4.0,
+      "q": 0.5
+    },
+    "local": {
+      "rho_threshold": 0.3684197416423757,
+      "delta_rho": 0.724666718962541,
+      "delta_B": -0.07628086561017877,
+      "implied_stake_derivative": 0.3273109387289954,
+      "expression": "K*(1-2*delta_B)/delta_rho - 2*(1-rho_D)",
+      "note": "Derivative at b=0 along all-release indifference; numerical central differences."
+    },
+    "attribution_only": {
+      "b": 0.0,
+      "B": 1.0,
+      "rho_threshold": 0.3684197416423757,
+      "rho": 0.3684297416423757,
+      "winning_stake": 0.6315702583576244,
+      "t2": 0.7883160096908607,
+      "release_gain0": 0.04737639180360975,
+      "release_gain1": 7.246666745008845e-06,
+      "max_outlay": 1.0,
+      "outlay_when_one_ready": 1.0
+    },
+    "bonus_and_attribution": {
+      "b": 0.02,
+      "B": 0.96,
+      "rho_threshold": 0.3352900418974068,
+      "rho": 0.3353000418974068,
+      "winning_stake": 0.6381119597784894,
+      "t2": 0.7802344686984688,
+      "release_gain0": 0.04349762931977891,
+      "release_gain1": 6.959301319553468e-06,
+      "max_outlay": 1.0,
+      "outlay_when_one_ready": 0.98
+    },
+    "margin_above_threshold": 1e-05
+  },
+  "rediscovery_fast": {
+    "parameters": {
+      "P": 0.01,
+      "K": 1.0,
+      "etaR": 1.0,
+      "etaI": 6.0,
+      "etaE": 7.0,
+      "q": 0.83
+    },
+    "local": {
+      "rho_threshold": 0.08217496618965502,
+      "delta_rho": 0.6205810935695777,
+      "delta_B": -0.005639454099537477,
+      "implied_stake_derivative": -0.20608236296793225,
+      "expression": "K*(1-2*delta_B)/delta_rho - 2*(1-rho_D)",
+      "note": "Derivative at b=0 along all-release indifference; numerical central differences."
+    },
+    "attribution_only": {
+      "b": 0.0,
+      "B": 1.0,
+      "rho_threshold": 0.08217496618965502,
+      "rho": 0.08218496618965501,
+      "winning_stake": 0.917815033810345,
+      "t2": 0.668098174924046,
+      "release_gain0": 0.012758459466066366,
+      "release_gain1": 6.205809831003051e-06,
+      "max_outlay": 1.0,
+      "outlay_when_one_ready": 1.0
+    },
+    "bonus_and_attribution": {
+      "b": 0.02,
+      "B": 0.96,
+      "rho_threshold": 0.048246655784095,
+      "rho": 0.048256655784095,
+      "winning_stake": 0.9136736104472688,
+      "t2": 0.6711264744818115,
+      "release_gain0": 0.007797782446844204,
+      "release_gain1": 5.965225383201822e-06,
+      "max_outlay": 1.0,
+      "outlay_when_one_ready": 0.98
+    },
+    "margin_above_threshold": 1e-05
+  }
+}

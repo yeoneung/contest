@@ -1,0 +1,50 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\pgfplotsset{colormap={seqblue}{rgb255=(244,248,253) rgb255=(205,226,251)
+  rgb255=(158,197,244) rgb255=(109,167,236) rgb255=(57,135,229)
+  rgb255=(37,106,191) rgb255=(24,79,149) rgb255=(13,54,107)}}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1, horizontal sep=1.75cm}, paper]
+\nextgroupplot[title={(a) Equilibrium release regions},
+  xlabel={Attribution share $\rho$}, ylabel={Readiness probability $q$},
+  xmin=0, xmax=1, ymin=0.02, ymax=0.98, xtick={0,0.2,...,1}, grid=none,
+  axis on top]
+  \addplot[fill=wfill, draw=none] table[x=rho, y=q] {data/poly_withhold.csv} -- cycle;
+  \addplot[fill=mixfill, draw=none] table[x=rho, y=q] {data/poly_multiple.csv} -- cycle;
+  \addplot[fill=relfill, draw=none] table[x=rho, y=q] {data/poly_release.csv} -- cycle;
+  \addplot[ink2, line width=0.8pt] table[x=rho, y=q] {data/regions_withhold.csv};
+  \addplot[cA, line width=1.15pt] table[x=rho, y=q] {data/regions_release.csv};
+  \draw[ink3, line width=0.5pt, densely dotted] (axis cs:0,0.5) -- (axis cs:1,0.5);
+  \node[lab, text=ink2, align=center] at (axis cs:0.13,0.24) {unique\\withholding};
+  \node[lab, text=cA!75!black, align=center] at (axis cs:0.76,0.62) {all release is the\\unique equilibrium};
+  \draw[cB!80!black, line width=0.6pt, -{Latex[length=1.6mm]}] (axis cs:0.70,0.25) -- (axis cs:0.505,0.25);
+  \node[lab, text=cB!80!black, anchor=west, fill=white, rounded corners=1pt] at (axis cs:0.70,0.25) {multiple equilibria};
+  \node[lab, text=cA!85!black, anchor=west] at (axis cs:0.21,0.72) {$\rho_D(q)$};
+  \node[lab, text=ink2, anchor=north east] at (axis cs:1,0.5) {baseline $q=0.5$};
+\nextgroupplot[title={(b) Technology map of $\rho_D$},
+  xmode=log, ymode=log, xmin=0.5, xmax=32, ymin=0.01, ymax=0.5,
+  xlabel={Enabled extension efficiency $\eta_E/\eta_R$},
+  ylabel={Rediscovery efficiency $\eta_I/\eta_R$},
+  xtick={0.5,1,2,4,8,16,32}, xticklabels={0.5,1,2,4,8,16,32},
+  ytick={0.01,0.02,0.05,0.1,0.2,0.5}, yticklabels={0.01,0.02,0.05,0.1,0.2,0.5},
+  grid=none, axis on top, enlargelimits=false,
+  colorbar right, point meta min=0, point meta max=0.5,
+  colorbar style={width=0.22cm, ytick={0,0.1,...,0.5},
+     yticklabel style={font=\footnotesize, color=ink2, /pgf/number format/fixed,
+     /pgf/number format/precision=1},
+     title={$\rho_D$}, title style={font=\small, color=ink, at={(0.5,1.02)}, anchor=south},
+     axis line style={ink3, line width=0.4pt}, tick style={ink3}}]
+  \addplot graphics[xmin=0.5, xmax=32, ymin=0.01, ymax=0.5] {data/techmap_heat.png};
+  \foreach \lev/\pos in {1/0.5, 2/0.5, 3/0.5, 4/0.5}{
+    \addplot[white, line width=0.7pt, opacity=0.95] table[x expr=10^\thisrow{le}, y expr=10^\thisrow{li}] {data/techmap_contour_\lev.csv};
+  }
+  \node[lab, text=ink, fill=white, fill opacity=0.8, text opacity=1, rounded corners=1pt] at (axis cs:0.70,0.333) {$0.1$};
+  \node[lab, text=ink, fill=white, fill opacity=0.8, text opacity=1, rounded corners=1pt] at (axis cs:2.0,0.25) {$0.2$};
+  \node[lab, text=white, fill=o3, fill opacity=0.8, text opacity=1, rounded corners=1pt] at (axis cs:10,0.18) {$0.3$};
+  \node[lab, text=white, fill=o4, fill opacity=0.8, text opacity=1, rounded corners=1pt] at (axis cs:10,0.0467) {$0.4$};
+  \addplot[only marks, mark=*, mark size=2.3pt, mark options={fill=cB, draw=white, line width=0.8pt}] coordinates {(4,0.05)};
+  \node[lab, text=white, anchor=east, font=\footnotesize\bfseries] at (axis cs:3.6,0.05) {baseline};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

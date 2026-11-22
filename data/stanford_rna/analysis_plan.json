@@ -1,0 +1,54 @@
+{
+  "specified_utc": "2026-11-21T08:04:31.222506+00:00",
+  "case": "Stanford RNA 3D Folding 2025",
+  "competition_id": 87793,
+  "cohort": "Final-ranked, nonbenchmark teams in Meta Kaggle snapshot 2401",
+  "primary_qualification": "Final private-validation TM score >= 0.3",
+  "sensitivity_thresholds": [
+    0.2,
+    0.4
+  ],
+  "readiness_clock": "Source version created before 2025-04-23; version AuthorUserId equals final TeamLeaderId. SubmissionDate is not a creation timestamp.",
+  "missingness": "Unmatched and non-leader-authored records remain unclassified; no imputation of non-readiness.",
+  "planning_translation": "Qualified leader-owned predictor demonstrates a usable method in a retrospective candidate pool; two draws assumed independent. This is an explicit model-mapping assumption.",
+  "financial_inputs_usd": {
+    "award_total": 75000,
+    "protected_placements": 40000,
+    "design_cap": 35000,
+    "maximum_bonus_per_team": 2500,
+    "maximum_bonus_slots": 2
+  },
+  "numerical_design": "51 bonus values, $50 increments; common attribution rounded upward to 0.1 percentage point; one contract across 375 disclosed sensitivity scenarios.",
+  "q_upper_grid": 0.99,
+  "technology_ratios_assumed": {
+    "rediscovery": [
+      0.001,
+      4.0
+    ],
+    "method_use": [
+      0.25,
+      16.0
+    ]
+  },
+  "recognition_to_cap_scenarios": [
+    0.01,
+    0.1,
+    0.2
+  ],
+  "interpretation": "An applied planning comparison, not causal policy estimation or an estimated structural model.",
+  "recognition_note": "Positive lower value preserves the model's maintained P>0 assumption; these are sensitivity inputs, not measured recognition values.",
+  "sensitivity_amendment": {
+    "updated_utc": "2026-11-21T08:22:21.145085+00:00",
+    "reason": "Include both slower use of released methods and rediscovery faster than own extension; these inputs remain sensitivity assumptions, not estimates. No outcome-based restriction to the analytical reversal region.",
+    "original_ratio_ranges": {
+      "rediscovery": [
+        0.001,
+        1.0
+      ],
+      "method_use": [
+        1.0,
+        16.0
+      ]
+    }
+  }
+}

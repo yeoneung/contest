@@ -1,0 +1,50 @@
+% Shared preamble for all standalone figures
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots,fillbetween}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.misc,fit,backgrounds}
+\pgfplotsset{compat=1.18}
+% categorical slots (validated: adjacent CVD separation passes)
+\definecolor{cA}{HTML}{2A78D6}
+\definecolor{cB}{HTML}{EB6834}
+\definecolor{cC}{HTML}{1BAF7A}
+\definecolor{cD}{HTML}{6250D6}
+% ordinal blue ramp for ordered parameter values
+\definecolor{o1}{HTML}{86B6EF}
+\definecolor{o2}{HTML}{3987E5}
+\definecolor{o3}{HTML}{1C5CAB}
+\definecolor{o4}{HTML}{0D366B}
+% ink and chrome
+\definecolor{ink}{HTML}{0B0B0B}
+\definecolor{ink2}{HTML}{52514E}
+\definecolor{ink3}{HTML}{8A8984}
+\definecolor{gridc}{HTML}{E4E3DF}
+\definecolor{relfill}{HTML}{E6F0FC}
+\definecolor{mixfill}{HTML}{FCE9DF}
+\definecolor{wfill}{HTML}{EFEEEB}
+\pgfplotsset{
+  paper/.style={
+    width=7.55cm, height=5.2cm, scale only axis=false,
+    axis lines*=left, axis line style={ink3, line width=0.4pt},
+    tick style={ink3, line width=0.4pt}, tick align=outside,
+    major tick length=2.5pt, minor tick length=1.5pt,
+    grid=major, major grid style={gridc, line width=0.35pt},
+    tick label style={font=\footnotesize, color=ink2},
+    label style={font=\small, color=ink},
+    title style={font=\small, color=ink, align=left, anchor=west, at={(0,1.03)}},
+    every axis title shift=0pt,
+    legend style={draw=none, fill=white, fill opacity=0.85, text opacity=1,
+                  font=\footnotesize, text=ink2, cells={anchor=west},
+                  row sep=-1pt},
+    legend cell align=left,
+    every axis plot/.append style={line width=1.15pt, line join=round},
+    clip mode=individual,
+    /pgf/number format/fixed, /pgf/number format/1000 sep={},
+  },
+}
+\tikzset{
+  lab/.style={font=\footnotesize, inner sep=1.5pt},
+  vline/.style={ink3, line width=0.6pt, densely dotted},
+}

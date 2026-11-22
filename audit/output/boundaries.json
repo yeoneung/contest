@@ -1,0 +1,42 @@
+{
+  "full_share_positive_discount": [
+    {
+      "r": 1e-12,
+      "full_share_hazard": 1.4142125623734486e-06,
+      "formula": 1.4142125623734486e-06
+    },
+    {
+      "r": 1e-09,
+      "full_share_hazard": 4.4720359561176134e-05,
+      "formula": 4.4720359561176134e-05
+    },
+    {
+      "r": 1e-06,
+      "full_share_hazard": 0.0014132139159264416,
+      "formula": 0.0014132139159264416
+    },
+    {
+      "r": 0.001,
+      "full_share_hazard": 0.043732538492690085,
+      "formula": 0.043732538492690085
+    },
+    {
+      "r": 0.1,
+      "full_share_hazard": 0.358257569495584,
+      "formula": 0.358257569495584
+    },
+    {
+      "r": 1.0,
+      "full_share_hazard": 0.7320508075688773,
+      "formula": 0.7320508075688773
+    },
+    {
+      "r": 100.0,
+      "full_share_hazard": 0.9950493836207795,
+      "formula": 0.9950493836207795
+    }
+  ],
+  "interior_r0_hazard": 1.3447532690562272,
+  "interior_r_1e-12_hazard": 1.34475326905795,
+  "r0_rho1": "No stationary equilibrium in the sole-originator race: follower optimally chooses zero; against a zero rival the originator has an unattained supremum as x approaches zero from above."
+}

@@ -1,0 +1,27 @@
+{
+  "seed": 20261101,
+  "methods": "Quadratic best responses derived directly from expected payoffs; coupled equilibrium solved by composition; independent of manuscript scalar root and code/model.py.",
+  "counts": {
+    "arbitrary_payoff_races": 1500,
+    "attribution_parameter_draws": 650,
+    "payment_timing_draws": 400,
+    "release_game_parameter_draws": 500
+  },
+  "max_relative_errors_except_threshold_absolute": {
+    "best_response": 1.233761324496882e-13,
+    "zero_discount_scaling": 1.148000381067601e-10,
+    "timescale": 4.426811290632439e-13,
+    "continuation_zero_discount": 1.3226673678085993e-11,
+    "threshold_endpoint": 1.8557599901214417e-11,
+    "completion_bonus_invariance": 1.6465153860101098e-13,
+    "full_share_limit": 4.595283416163821e-16
+  },
+  "n_flagged_failures": 0,
+  "first_flagged_failures": [],
+  "limitations": [
+    "finite-precision numerical tests do not establish a theorem",
+    "tests use stationary constant intensities; arbitrary-process deviations are not independently verified",
+    "not a comprehensive review of all theorems or of nonstationary equilibria",
+    "random draws restricted to nondegenerate model assumptions"
+  ]
+}

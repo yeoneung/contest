@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "parameter_draws": 121,
+  "feasible_cases": 106,
+  "infeasible_cases": 15,
+  "optimizer_types": {
+    "interior": 36,
+    "lower": 69,
+    "upper_limit": 1
+  },
+  "max_scaled_welfare_error": 2.6881412145245706e-11,
+  "method": "Independent coupled best responses, expected-payoff welfare, independently solved release-bonus lower bound, bounded scalar optimization plus endpoint comparisons.",
+  "seed": 20261112
+}

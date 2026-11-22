@@ -1,0 +1,33 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\begin{document}
+\begin{tikzpicture}
+\pgfplotstableread{data/design.csv}\tab
+\begin{groupplot}[group style={group size=2 by 1, horizontal sep=1.9cm},
+  paper, xmin=0, xmax=1.2, xtick={0,0.2,...,1.2},
+  xlabel={Instrument level, fraction of $B$}]
+\nextgroupplot[title={(a) Release of the foundational result},
+  ylabel={Symmetric release probability $p^*$}, ymin=-0.03, ymax=1.08]
+  \addplot[cA] table[x=level, y=p_attr] {\tab};
+  \addplot[cB, densely dashed] table[x=level, y=p_add] {\tab};
+  \addplot[cD, densely dotted, line width=1.3pt] table[x=level, y=p_rel] {\tab};
+  \draw[vline] (axis cs:0.2678,-0.03) -- (axis cs:0.2678,1.08);
+  \draw[vline] (axis cs:0.3684,-0.03) -- (axis cs:0.3684,1.08);
+  \draw[vline] (axis cs:0.7,-0.03) -- (axis cs:0.7,1.08);
+  \node[lab, text=cA!80!black, anchor=west, align=left] at (axis cs:0.40,0.80) {redistributive\\attribution $\rho$};
+  \node[lab, text=cB!85!black, anchor=west, align=left] at (axis cs:0.715,0.62) {completion\\bonus $\beta$};
+  \node[lab, text=cD, anchor=west, align=left] at (axis cs:0.02,0.45) {release\\bonus $b$};
+\nextgroupplot[title={(b) Completion of the extension},
+  ylabel={Expected extension time $\mathbb{E}[T_2]$}, ymode=log, ymin=0.3, ymax=60,
+  ytick={0.5,1,2,5,10,20,50}, yticklabels={0.5,1,2,5,10,20,50},
+  minor ytick={0.3,0.4,0.6,0.7,0.8,0.9,3,4,6,7,8,9,30,40}]
+  \addplot[cA] table[x=level, y=t2_attr] {\tab};
+  \addplot[cB, densely dashed] table[x=level, y=t2_add] {\tab};
+  \addplot[cD, densely dotted, line width=1.3pt] table[x=level, y=t2_rel] {\tab};
+  \node[lab, text=cA!80!black, anchor=east] at (axis cs:0.95,25) {$\rho$};
+  \node[lab, text=cD, anchor=south west] at (axis cs:0.285,0.56) {$b$};
+  \node[lab, text=cB!85!black, anchor=south] at (axis cs:1.0,0.52) {$\beta$ and $b$};
+  \node[lab, text=ink2, anchor=north west] at (axis cs:0.72,0.47) {$0.4979$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

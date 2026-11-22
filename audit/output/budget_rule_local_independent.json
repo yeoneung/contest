@@ -1,0 +1,15 @@
+{
+  "cases": 79,
+  "max_scaled_slope_error": 1.2861055515746504e-06,
+  "baseline": {
+    "analytical": [
+      -0.40853140092281237,
+      0.37546769950253644
+    ],
+    "direct_finite_difference": [
+      -0.40853117455608157,
+      0.37546846398672784
+    ]
+  },
+  "method": "Direct coupled stationary best responses and separately recomputed incentive thresholds; one-sided bonus step 1e-6 of cap."
+}

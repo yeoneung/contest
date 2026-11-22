@@ -1,0 +1,3 @@
+Id,Slug,EnabledDate,DeadlineDate,ProhibitNewEntrantsDeadlineDate,OnlyAllowKernelSubmissions,MaxDailySubmissions,NumScoredSubmissions,MaxTeamSize,RewardQuantity,NumPrizes,TotalTeams,TotalCompetitors,TotalSubmissions
+87793,stanford-rna-3d-folding,02/27/2025 18:25:00,09/24/2025 23:59:00,05/22/2025 23:59:00,True,5,2,5,75000.0000,3,1410,1706,2437
+118765,stanford-rna-3d-folding-2,01/07/2026 18:00:03,03/25/2026 23:59:00,03/18/2026 23:59:00,True,5,2,5,75000.0000,3,1876,2138,3394

@@ -1,0 +1,36 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\begin{document}
+\begin{tikzpicture}
+\pgfplotstableread{data/impatience.csv}\tab
+\begin{groupplot}[group style={group size=3 by 1, horizontal sep=1.45cm},
+  paper, width=5.4cm, height=4.7cm]
+\nextgroupplot[title={(a) Extension hazard},
+  xlabel={Attribution share $\rho$}, ylabel={Total hazard $X_E(\rho)$},
+  xmin=0, xmax=1, ymin=0, ymax=3.0, xtick={0,0.5,1},
+  legend style={at={(0.03,0.03)}, anchor=south west}]
+  \addplot[o4] table[x=rho, y=XE_0p0] {\tab};
+  \addplot[o3, dash dot] table[x=rho, y=XE_0p01] {\tab};
+  \addplot[o2, densely dashed] table[x=rho, y=XE_0p05] {\tab};
+  \addplot[o1] table[x=rho, y=XE_0p2] {\tab};
+  \legend{$r=0$, $r=0.01$, $r=0.05$, $r=0.2$}
+\nextgroupplot[title={(b) Release value},
+  xlabel={Attribution share $\rho$}, ylabel={Originator value $L_\rho$},
+  xmin=0, xmax=1, ymin=0.3, ymax=1.25, xtick={0,0.5,1}]
+  \addplot[o4] table[x=rho, y=L_0p0] {\tab};
+  \addplot[o3, dash dot] table[x=rho, y=L_0p01] {\tab};
+  \addplot[o2, densely dashed] table[x=rho, y=L_0p05] {\tab};
+  \addplot[o1] table[x=rho, y=L_0p2] {\tab};
+  \addplot[only marks, mark=*, mark size=1.6pt, mark options={fill=white, draw=ink2, line width=0.6pt}]
+     coordinates {(0.8543,0.8674) (0.9195,1.0135) (0.9619,1.1109)};
+\nextgroupplot[title={(c) Cost of full attribution},
+  xmode=log, ymode=log, xmin=1, xmax=10000, ymin=2, ymax=600,
+  xlabel={Uniform efficiency scale $s$}, ylabel={Delay ratio},
+  xtick={1,10,100,1000,10000}, ytick={2,5,20,50,200,500},
+  yticklabels={2,5,20,50,200,500}]
+  \addplot[ink3, line width=0.7pt, densely dotted, domain=1:10000, samples=2] {4.2708*x^0.5};
+  \addplot[cA] table[x=s, y=ratio] {data/acceleration.csv};
+  \node[lab, text=ink2, anchor=north west] at (axis cs:25,11) {slope $\tfrac12$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

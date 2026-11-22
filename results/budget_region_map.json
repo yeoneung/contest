@@ -1,0 +1,144 @@
+{
+  "grid_points_per_axis": 81,
+  "total_settings": 59049,
+  "software": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.4"
+  },
+  "priority_to_cap_ratios": [
+    0.05,
+    0.2,
+    0.5
+  ],
+  "readiness_probabilities": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "rediscovery_ratio_range": [
+    0.001,
+    10.0
+  ],
+  "method_use_ratio_range": [
+    0.1,
+    100.0
+  ],
+  "normalization": "eta_R=cap=1; r=beta=0; normalized slope=(cap/T0)*dT/db",
+  "scope": "Local derivatives along binding all-release constraints; no empirical data or population frequencies.",
+  "regions": {
+    "0": "Release already strictly optimal at zero attribution",
+    "1": "Both rules accelerate",
+    "2": "Reservation accelerates; recycling slows",
+    "3": "Reservation slows; recycling accelerates",
+    "4": "Both rules slow",
+    "5": "Zero-slope or zero-gain boundary"
+  },
+  "panels": [
+    {
+      "priority_ratio": 0.05,
+      "q": 0.2,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 349,
+        "Both rules accelerate": 1,
+        "Reservation accelerates; recycling slows": 4042,
+        "Both rules slow": 2169
+      }
+    },
+    {
+      "priority_ratio": 0.05,
+      "q": 0.5,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 397,
+        "Both rules accelerate": 33,
+        "Reservation accelerates; recycling slows": 4002,
+        "Both rules slow": 2129
+      }
+    },
+    {
+      "priority_ratio": 0.05,
+      "q": 0.8,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 595,
+        "Reservation accelerates; recycling slows": 3989,
+        "Both rules slow": 1977
+      }
+    },
+    {
+      "priority_ratio": 0.2,
+      "q": 0.2,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 698,
+        "Both rules accelerate": 1,
+        "Reservation accelerates; recycling slows": 4036,
+        "Both rules slow": 1826
+      }
+    },
+    {
+      "priority_ratio": 0.2,
+      "q": 0.5,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 956,
+        "Both rules accelerate": 33,
+        "Reservation accelerates; recycling slows": 3957,
+        "Both rules slow": 1615
+      }
+    },
+    {
+      "priority_ratio": 0.2,
+      "q": 0.8,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 2985,
+        "Reservation accelerates; recycling slows": 3169,
+        "Both rules slow": 407
+      }
+    },
+    {
+      "priority_ratio": 0.5,
+      "q": 0.2,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 1831,
+        "Both rules accelerate": 1,
+        "Reservation accelerates; recycling slows": 3907,
+        "Both rules slow": 822
+      }
+    },
+    {
+      "priority_ratio": 0.5,
+      "q": 0.5,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 2746,
+        "Both rules accelerate": 33,
+        "Reservation accelerates; recycling slows": 3499,
+        "Both rules slow": 283
+      }
+    },
+    {
+      "priority_ratio": 0.5,
+      "q": 0.8,
+      "points": 6561,
+      "regions": {
+        "Release already strictly optimal at zero attribution": 6561
+      }
+    }
+  ],
+  "baseline": {
+    "rhoD": 0.3684197416423757,
+    "T0": 0.7883035280466157,
+    "D_B": -0.0762808655975114,
+    "D_rho": 0.7246667189618043,
+    "slope_fixed": -0.5182412438710453,
+    "slope_recycling": 0.47629838779604383,
+    "gain_at_zero": -0.2677606968540787,
+    "region": 2
+  }
+}

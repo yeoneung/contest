@@ -1,0 +1,37 @@
+{
+  "cases_contest": 400,
+  "cases_certified": 150,
+  "seed": 20261028,
+  "maximum_residuals": {
+    "contest_hjb": 3.552713678800501e-14,
+    "contest_foc": 1.3322676295501878e-15,
+    "contest_closed_form_r0": 3.552713678800501e-15,
+    "contest_deviation_gain": 0.0,
+    "scaling_equivalence": 5.10702591327572e-14,
+    "full_attribution_hazard": 6.661338147750939e-15,
+    "self_limiting_derivative": 1.1583606459601164e-08,
+    "certified_closed_form_r0": 1.3322676295501878e-15,
+    "fixed_game_affine": 8.881784197001252e-16,
+    "monte_carlo_T": 1.0198619100862036,
+    "completion_priority_equivalence": 1.5987211554602254e-14,
+    "release_bonus_shift": 6.661338147750939e-16,
+    "power_min_argmin_below_2": 0.7250000000000001,
+    "power_homogeneity_r0": 4.279129134365789e-15
+  },
+  "violations": {
+    "G_not_decreasing": 0,
+    "hazard_not_decreasing_in_rho": 0,
+    "release_fails_at_full_attribution": 0,
+    "gain_not_increasing_r0": 0,
+    "rhoU_below_rhoD": 0,
+    "additive_hazard_r0_changed": 0,
+    "additive_hazard_not_increasing": 0,
+    "additive_gain_not_increasing_r0": 0,
+    "welfare_outside_bracket": 0,
+    "comparative_statics_sign": 0,
+    "dZdP_nonpositive": 0,
+    "loss_bonus_not_decreasing": 0,
+    "power_nonmonotone_alpha_ge_2": 0,
+    "power_local_condition_mismatch": 0
+  }
+}

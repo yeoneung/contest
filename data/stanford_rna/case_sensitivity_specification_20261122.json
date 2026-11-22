@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-22",
+  "purpose": "Separate common-contract insurance gains from scenario-specific gains and disclose sensitivity to unobserved rediscovery efficiency.",
+  "financial_payment_usd": 2500,
+  "rediscovery_lower_bounds": [
+    0.001,
+    0.01,
+    0.05,
+    0.1
+  ],
+  "rediscovery_upper": 4,
+  "method_use_range": [
+    0.25,
+    16
+  ],
+  "recognition_to_cap_values": [
+    0.01,
+    0.1,
+    0.2
+  ],
+  "readiness_lower": "3/1410",
+  "readiness_upper_grid": 0.99,
+  "grid": "5 readiness x 5 rediscovery x 5 method-use x 3 recognition = 375 per bound",
+  "comparators": [
+    "one common no-bonus contract versus one common $2500 contract, with shares rounded upward by 0.1 percentage point",
+    "scenario-specific exact thresholds, interpreted as limits of strict release",
+    "scenario-specific rounded shares, with all rounding exceptions retained"
+  ],
+  "screening_floors": [
+    0.5,
+    0.8
+  ],
+  "report_both": [
+    "originator shares",
+    "expected-time ratios",
+    "driving corner",
+    "winning-stake increments"
+  ],
+  "scope": "Fixed-payment finite-grid results do not imply that recycling can never accelerate. The original bonus-menu calculations remain auxiliary. No empirical treatment effects or cost-efficiency estimates are claimed."
+}

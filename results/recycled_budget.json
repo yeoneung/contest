@@ -1,0 +1,66 @@
+{
+  "parameters": {
+    "P": 0.2,
+    "K": 1.0,
+    "etaR": 1.0,
+    "etaI": 0.05,
+    "etaE": 4.0,
+    "q": 0.5
+  },
+  "grid_points": 1001,
+  "H": 0.7433875556771812,
+  "attribution_only": {
+    "B0": 1.0,
+    "B1": 1.0,
+    "B2": 1.0,
+    "gain0": 0.04736831180353107,
+    "gain1": -2.220446049250313e-16,
+    "H": 0.7433875556771812,
+    "t2": 0.7883035280466155,
+    "welfare2": 2.6780738012808825,
+    "welfare4": 4.533180316611654,
+    "welfare8": 8.243393347273196,
+    "max_payout": 1.0,
+    "payout_one": 1.0,
+    "payout_two": 1.0
+  },
+  "fastest_numeric": {
+    "rho": 0.36841974301733227,
+    "b": 0.0,
+    "B0": 1.0,
+    "B1": 1.0,
+    "B2": 1.0,
+    "gain0": 0.04736831291449628,
+    "gain1": 9.963851965721915e-10,
+    "H": 0.7433875556771812,
+    "t2": 0.7883035297627604,
+    "welfare2": 2.678073801404504,
+    "welfare4": 4.533180316445165,
+    "welfare8": 8.243393346526489,
+    "max_payout": 1.0,
+    "payout_one": 1.0,
+    "payout_two": 1.0
+  },
+  "welfare_numeric": [
+    {
+      "K2": 2.0,
+      "rho": 0.4792509600073305,
+      "b": 0.0,
+      "welfare": 2.683494362823973
+    },
+    {
+      "K2": 4.0,
+      "rho": 0.3684197432358561,
+      "b": 0.0,
+      "welfare": 4.533180316418706
+    },
+    {
+      "K2": 8.0,
+      "rho": 0.36841974171334796,
+      "b": 0.0,
+      "welfare": 8.243393347234653
+    }
+  ],
+  "welfare_search": "At every share, optimize b over the full feasible interval; strict concavity in b justifies bounded scalar optimization with endpoint comparisons.",
+  "note": "Grid/refinement does not certify global optimality; equality requires all-release selection or an arbitrarily small strict margin."
+}

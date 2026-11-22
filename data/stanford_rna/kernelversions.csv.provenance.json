@@ -1,0 +1,19 @@
+{
+  "url": "https://www.kaggle.com/api/v1/datasets/download/kaggle/meta-kaggle/KernelVersions.csv?datasetVersionNumber=2401",
+  "dataset_version": 2401,
+  "retrieved_utc": "2026-11-21T08:10:53.139859+00:00",
+  "headers": {
+    "Content-Length": "5119317998",
+    "ETag": "\"c07a37ff65fd9586b718aea4ebd4516b\"",
+    "Last-Modified": "Fri, 20 Nov 2026 16:42:27 GMT",
+    "x-goog-generation": "1795192947784825",
+    "x-goog-hash": "crc32c=XTs/4g=="
+  },
+  "source_bytes": 5119317998,
+  "source_sha256": "ea74273e21a215437bc72481329139e49708aff530064e409ca39b2da635e15c",
+  "source_byte_lines": 19707520,
+  "requested_version_ids": 6745,
+  "retained_rows": 314,
+  "extracted_sha256": "1b497fa26773296f63ee816c6da634fd8147c58ddcf0af26ae9addb77964227b",
+  "seconds": 591.27
+}

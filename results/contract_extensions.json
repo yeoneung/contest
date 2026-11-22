@@ -1,0 +1,114 @@
+{
+  "parameters": {
+    "P": 0.2,
+    "B": 1.0,
+    "etaR": 1.0,
+    "etaI": 0.05,
+    "etaE": 4.0,
+    "q": 0.5
+  },
+  "penalty": {
+    "tau": 0.4,
+    "gain0": 0.04020464270124352,
+    "gain1": 0.00726524259561831,
+    "L": 0.3798915553123042,
+    "Y": 0.43333333333333324,
+    "U": 0.6044220410811669,
+    "F": 0.1614567591300834,
+    "C": 0.26666666666666666,
+    "Z": 0.6372376443243174,
+    "time": 0.4978769459079083,
+    "welfare_K2_8_delta_point1": 8.33463293689335
+  },
+  "penalty_boundary_numeric": 0.389011424070004,
+  "reconsideration": {
+    "baseline_threshold": 0.36841974164237584,
+    "revised_threshold": 0.36841974164239133,
+    "zero_attribution": {
+      "rho": 0.0,
+      "gain": -0.2677606968540786,
+      "date_zero_release_probability": 0.0,
+      "time_method": 3.181209706329122,
+      "time_extension": 3.4908021176500386,
+      "baseline_gain1": -0.2677606968540786
+    }
+  },
+  "welfare": {
+    "S0": 0.6315802583576244,
+    "Smax_numeric": 0.6829777346334964,
+    "K2_boundary_at_delta_point1": 2.8522403963753296,
+    "delta_boundary_at_K2_8": 0.0320415226655308,
+    "reservation_unspent_fraction": 0.10567408634062457,
+    "cases": [
+      {
+        "K2": 2.0,
+        "delta": 0.1,
+        "social_stake": 0.5207490576066287,
+        "attribution_welfare": 2.683494362823973,
+        "reservation_welfare": 2.683494362823973,
+        "welfare_gain": 0.0,
+        "welfare_gain_percent": 0.0
+      },
+      {
+        "K2": 4.0,
+        "delta": 0.1,
+        "social_stake": 0.7573170999226617,
+        "attribution_welfare": 4.533180316611654,
+        "reservation_welfare": 4.537886011595441,
+        "welfare_gain": 0.004705694983787367,
+        "welfare_gain_percent": 0.10380559905247555
+      },
+      {
+        "K2": 8.0,
+        "delta": 0.1,
+        "social_stake": 1.09256110256994,
+        "attribution_welfare": 8.243393347273198,
+        "reservation_welfare": 8.26827705751965,
+        "welfare_gain": 0.02488371024645275,
+        "welfare_gain_percent": 0.3018624636501599
+      },
+      {
+        "K2": 8.0,
+        "delta": 0.01,
+        "social_stake": 0.3571518120231585,
+        "attribution_welfare": 8.78359595621794,
+        "reservation_welfare": 8.78359595621794,
+        "welfare_gain": 0.0,
+        "welfare_gain_percent": 0.0
+      }
+    ]
+  },
+  "equal_efficiency": {
+    "rho0": 0.29367678931404717,
+    "T0": 1.0618368314296651,
+    "D_B": -0.07636042379320462,
+    "D_rho": 0.6486584835776222,
+    "H": 0.6666666666666667,
+    "fixed_stake_derivative": 0.36443794084698133,
+    "fixed_time_derivative": -0.5478704685152526,
+    "recycling_time_derivative": 0.32446668966507985,
+    "one_sided_finite_differences": [
+      {
+        "b": 0.0001,
+        "fixed": -0.547839386442206,
+        "recycling": 0.3245341861601858
+      },
+      {
+        "b": 1e-05,
+        "fixed": -0.547867360256582,
+        "recycling": 0.32447343805142026
+      },
+      {
+        "b": 1e-06,
+        "fixed": -0.5478701579075818,
+        "recycling": 0.32446736475399973
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+  },
+  "scope": "A fixed-cap contract benchmark and a single post-certification reconsideration election; no unrestricted-mechanism or disclosure-timing optimality claim."
+}

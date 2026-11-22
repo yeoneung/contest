@@ -1,0 +1,31 @@
+\documentclass[border=3pt]{standalone}
+\input{figpreamble}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1, horizontal sep=1.15cm},
+  paper, width=5.45cm, height=4.7cm]
+\nextgroupplot[title={(a) No discounting},
+  xlabel={Attribution share $\rho$}, ylabel={Hazard relative to $\rho=0$},
+  xmin=0, xmax=1, ymin=0, ymax=1.05, xtick={0,0.5,1},
+  legend style={at={(0.03,0.03)}, anchor=south west}]
+  \addplot[o2, densely dashed] table[x=rho, y=z15] {data/power.csv};
+  \addplot[o3, dash dot, domain=0:1, samples=2] {1-x};
+  \addplot[o4] table[x=rho, y=z30] {data/power.csv};
+  \legend{$\alpha=1.5$, $\alpha=2$, $\alpha=3$}
+\nextgroupplot[title={(b) Discount rate $r=0.05$},
+  xlabel={Attribution share $\rho$},
+  xmin=0, xmax=1, ymin=0, ymax=1.05, xtick={0,0.5,1}]
+  \addplot[o2, densely dashed] table[x=rho, y=a15] {data/power.csv};
+  \addplot[o3, dash dot] table[x=rho, y=a20] {data/power.csv};
+  \addplot[o4] table[x=rho, y=a30] {data/power.csv};
+  \draw[ink3, line width=0.5pt] (axis cs:0.8,0.13) rectangle (axis cs:1,0.2);
+\nextgroupplot[title={(c) Near full attribution, $\alpha=1.5$},
+  xlabel={Attribution share $\rho$},
+  xmin=0.8, xmax=1, ymin=0.160, ymax=0.170, xtick={0.8,0.9,1},
+  ytick={0.160,0.165,0.170}, yticklabel style={/pgf/number format/precision=3}]
+  \addplot[o2, densely dashed] table[x=rho, y=a15] {data/power.csv};
+  \addplot[only marks, mark=*, mark size=1.7pt, mark options={fill=white, draw=ink2, line width=0.6pt}] coordinates {(0.9048,0.162597)};
+  \node[lab, text=ink2, anchor=north] at (axis cs:0.9048,0.1622) {minimum at $\rho=0.9048$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

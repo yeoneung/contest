@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-21",
+  "source_data_sha256": "aed6f75428589cb1f3eae7680d73280ab02e1cb10a2c6cd6e0d6db099ffc19a3",
+  "announced_contracts": [
+    {
+      "contest_id": "stanford-rna-3d-folding",
+      "edition": 2025,
+      "total_budget_usd": 75000,
+      "rank1_usd": 45000,
+      "rank2_usd": 15000,
+      "rank3_usd": 10000,
+      "sharing_award_usd": 2500,
+      "sharing_award_slots": 2,
+      "source_url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/overview",
+      "final_pool_usd": 70000,
+      "maximum_sharing_pool_usd": 5000,
+      "sharing_budget_percent": 6.666666666666667
+    },
+    {
+      "contest_id": "stanford-rna-3d-folding-2",
+      "edition": 2026,
+      "total_budget_usd": 75000,
+      "rank1_usd": 50000,
+      "rank2_usd": 15000,
+      "rank3_usd": 10000,
+      "sharing_award_usd": 0,
+      "sharing_award_slots": 0,
+      "source_url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding-2/",
+      "final_pool_usd": 75000,
+      "maximum_sharing_pool_usd": 0,
+      "sharing_budget_percent": 0.0
+    }
+  ],
+  "pool_accounting_counterfactuals": [
+    {
+      "rule": "fixed_reservation",
+      "paid_release_awards": 0,
+      "final_pool_usd": 70000,
+      "total_awards_usd": 70000
+    },
+    {
+      "rule": "recycling",
+      "paid_release_awards": 0,
+      "final_pool_usd": 75000,
+      "total_awards_usd": 75000
+    },
+    {
+      "rule": "fixed_reservation",
+      "paid_release_awards": 1,
+      "final_pool_usd": 70000,
+      "total_awards_usd": 72500
+    },
+    {
+      "rule": "recycling",
+      "paid_release_awards": 1,
+      "final_pool_usd": 72500,
+      "total_awards_usd": 75000
+    },
+    {
+      "rule": "fixed_reservation",
+      "paid_release_awards": 2,
+      "final_pool_usd": 70000,
+      "total_awards_usd": 75000
+    },
+    {
+      "rule": "recycling",
+      "paid_release_awards": 2,
+      "final_pool_usd": 70000,
+      "total_awards_usd": 75000
+    }
+  ],
+  "interpretation": "Published allocations are documentary evidence. Counterfactuals vary the treatment of unpaid release awards; they are not observed policy changes, calibrated race outcomes, or causal estimates."
+}
